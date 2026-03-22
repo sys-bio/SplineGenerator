@@ -1,13 +1,16 @@
 
+**Introductoin**
+
 This python code will take x/y data and generate a spline using Antimony's piecewise function. This is useful when you need to provide an input based on some data.  Below is an example of the output it generates. Once generated insert it into your antimony model.
 
+```python
 Input := piecewise (((-0.031143*(time-0.000000)-0.000000)*(time-0.000000)+0.531143)*(time-0.000000)+0.000000, (time >=0.000000) && (time <= 1.000000),\ 
 ((0.155717*(time-1.000000)-0.093430)*(time-1.000000)+0.437713)*(time-1.000000)+0.500000, (time >=1.000000) && (time <= 2.000000),\ 
 ((-0.591724*(time-2.000000)+0.373720)*(time-2.000000)+0.718003)*(time-2.000000)+1.000000, (time >=2.000000) && (time <= 3.000000),\ 
 ((0.711177*(time-3.000000)-1.401451)*(time-3.000000)-0.309727)*(time-3.000000)+1.500000, (time >=3.000000) && (time <= 4.000000),\ 
 ((-0.121267*(time-4.000000)+0.732082)*(time-4.000000)-0.979096)*(time-4.000000)+0.500000, (time >=4.000000) && (time <= 6.000000),\ 
 ((-0.000747*(time-6.000000)+0.004480)*(time-6.000000)+0.494027)*(time-6.000000)+0.500000, (time >=6.000000) && (time <= 8.000000))
-
+```
 
 A few design notes worth knowing:
 
